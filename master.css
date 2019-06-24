@@ -39,14 +39,12 @@ footer{
 }
 footer .cont_flex{
  justify-content: space-between;
- padding:10px 0;
+ padding:10px 5px;
 }
 footer .cont_flex .cont_flex_in.sx img{
   width:70px;
 }
-footer .cont_flex .cont_flex_in.sx{
-  margin-left:10px;
-}
+
 .title_music{
   display: flex;
   flex-direction: column;
@@ -57,14 +55,17 @@ footer .cont_flex .cont_flex_in.sx{
   margin:5px 10px;
   color:white;
 }
+
 .hearts{
   display:flex;
   flex-direction: column;
   justify-content: center;
 }
+.hearts p{
+  color: red;
+}
 .center{
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 .player{
   border-radius:50px;
