@@ -1,0 +1,32 @@
+body{
+  background-image: linear-gradient(to bottom right,#ccac00, black);
+  background-size: cover;
+  background-repeat:no-repeat;
+  height:500px;/*solo per vedere lo sfondo*/
+
+}
+/*setting header*/
+.cont_flex{
+  display: flex;
+  justify-content: center;
+}
+.cont_flex_in{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cont_flex .cont_flex_in li{
+  margin-right:50px;
+  list-style: none;
+  margin-bottom:10px;
+}
+
+.cont_flex .cont_flex_in li a{
+  text-decoration:none;
+  color:white;
+  font-size:15px;
+}
+.cont_flex .cont_flex_in li a:hover{
+  color:black;
+  opacity:0.8;
+}
