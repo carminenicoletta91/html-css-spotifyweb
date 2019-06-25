@@ -16,6 +16,7 @@
 /*testo in maiuscolo*/
 .text-upper-case{
   text-transform:uppercase;
+  
 }
 /*testo accentrto*/
 .text-at-center{

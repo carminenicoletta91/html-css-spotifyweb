@@ -15,12 +15,57 @@
 .menu{
   width:200px;
   height:100%;
-  background-color:black ;
+  background-color:rgba(0, 0, 0, 0.9);
+
 }
 .contents{
   width:calc(100% - 200px);
   height:100%;
-  background-image:linear-gradient(to bottom right,navy, black);
+  background-image:linear-gradient(to bottom right, 	lightslategrey,black);
+}
+h1, h2, h3, h4{
+  font-family:serif;
+}
+p,a{
+  font-family:Helvetica, Arial, sans-serif;
+}
+a{
+  text-decoration:none;
+}
+a:hover{
+  opacity:0.8;
+}
+/*setting menu colonna di sinistra*/
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.flex_in{
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+
+}
+.flex_in h2{
+  color:white;
+  font-size:32px;
+  margin-left:5px;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+.border{
+  border:solid 1px white;
+  width:90%;
+}
+
+.icon,.user{
+  margin-left:10px;
+  line-height:40px;
+}
+.recently p{
+  color:white;
+  font-size:12px;
 }
 /*setting header*/
 .header_menu{
@@ -38,12 +83,9 @@
 .header_menu .items_header_menu li a{
   text-decoration:none;
   color:white;
-  font-size:15px;
+  font-size:13px;
 }
-.header_menu .items_header_menu li a:hover{
-  color:white;
-  opacity:0.8;
-}
+
 /*setting footer*/
 .menu_in_play{
   display: flex;
@@ -72,19 +114,20 @@
   flex-direction: column;
   justify-content: center;
 }
-.hearts p{
-  color: red;
+.hearts a:hover img{
+  opacity:0.6;
 }
 .center{
   align-items: center;
 }
 .player{
   border-radius:50px;
+  margin-right:10px;
 }
-.destra{
+.dx{
   align-items: center;
 }
-.destra  img{
+.dx img{
   height:15px;
   width:15px;
   margin-right:30px;
