@@ -6,6 +6,7 @@
 .section_top{
   height:calc(100% - 100px);
   max-width: 100%;
+
 }
 .section_bottom{
   width: 100%;
@@ -21,10 +22,12 @@
 .contents{
   width:calc(100% - 200px);
   height:100%;
+  overflow: auto;
   background-image:linear-gradient(to bottom right, 	lightslategrey,black);
 }
 h1, h2, h3, h4{
   font-family:serif;
+  color:white;
 }
 p,a{
   font-family:Helvetica, Arial, sans-serif;
@@ -84,6 +87,33 @@ a:hover{
   text-decoration:none;
   color:white;
   font-size:13px;
+}
+.titolo_categoria{
+  margin-left:30px;
+  margin-bottom:25px;
+  margin-top:50px;
+  font-size:25px; 
+}
+
+.conten{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.music_copertina{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.music_copertina img{
+  max-width:200px;
+  max-height:150px;
+  margin-left:30px;
+  margin-top:15px;
+  margin-bottom:20px;
+}
+.circle{
+  border-radius:50%;
 }
 
 /*setting footer*/
