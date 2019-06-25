@@ -6,7 +6,6 @@
 .section_top{
   height:calc(100% - 100px);
   max-width: 100%;
-
 }
 .section_bottom{
   width: 100%;
@@ -17,7 +16,6 @@
   width:200px;
   height:100%;
   background-color:rgba(0, 0, 0, 0.9);
-
 }
 .contents{
   width:calc(100% - 200px);
@@ -58,28 +56,24 @@ a:hover{
   margin-top:15px;
   margin-bottom:15px;
 }
+.header_menu .items_header_menu a:active{
+  border-bottom:solid 5px green;
+}
 .border{
   border:solid 1px white;
   width:90%;
 }
-
 .icon,.user{
   margin-left:10px;
   line-height:40px;
 }
+
 .recently p{
   color:white;
   font-size:12px;
 }
 /*setting header*/
-.mod{
-  background-color:rgb(26, 188, 148);
-  border-radius:5px  ;
-  border-color:rgb(26, 188, 148) ;
-  line-height:30px;
-  width:40px;
 
-}
 .menu_a_tendina{
   display: none;
 }
@@ -158,9 +152,7 @@ a:hover{
   flex-direction: column;
   justify-content: center;
 }
-.hearts a:hover img{
-  opacity:0.6;
-}
+
 .player{
   display: flex;
   flex-direction: column;
