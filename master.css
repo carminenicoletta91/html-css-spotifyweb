@@ -22,7 +22,8 @@
 .contents{
   width:calc(100% - 200px);
   height:100%;
-  overflow: auto;
+  overflow:auto;
+
   background-image:linear-gradient(to bottom right, 	lightslategrey,black);
 }
 h1, h2, h3, h4{
@@ -92,9 +93,11 @@ a:hover{
   margin-left:30px;
   margin-bottom:25px;
   margin-top:50px;
-  font-size:25px; 
+  font-size:25px;
 }
-
+.avanzamento input{
+  width:400px;
+}
 .conten{
   display: flex;
   flex-direction: column;
@@ -147,18 +150,31 @@ a:hover{
 .hearts a:hover img{
   opacity:0.6;
 }
-.center{
-  align-items: center;
-}
 .player{
-  border-radius:50px;
-  margin-right:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.buttons{
+  display: flex;
+  margin-bottom:5px;
+  justify-content: center;
+}
+.buttons  img{
+  height:20px;
+  width:20px;
+  margin:0 15px;
+}
+.avanzamento{
+  display: flex;
+}
+.dx input{
+  width:100px;
 }
 .dx{
   align-items: center;
+  margin-right:10px;
 }
 .dx img{
-  height:15px;
-  width:15px;
-  margin-right:30px;
+  margin-right:5px;
 }
