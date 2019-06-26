@@ -1,4 +1,9 @@
-/*setting struttura*/
+/*setting struttura generale*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .container_general{
   width:100vw;
   height:100vh;
@@ -17,13 +22,22 @@
   height:100%;
   background-color:rgba(0, 0, 0, 0.9);
 }
-.contents{
+.album_e_artisti{
   width:calc(100% - 200px);
   height:100%;
   overflow:auto;
-
   background-image:linear-gradient(to bottom right, 	lightslategrey,black);
 }
+/*testo in maiuscolo*/
+.text-upper-case{
+  text-transform:uppercase;
+}
+/* COLONNE  */
+
+[class*='col-']{
+  float: left;
+}
+
 h1, h2, h3, h4{
   font-family:serif;
   color:white;
@@ -45,7 +59,6 @@ a:hover{
 }
 .flex_in{
   display: flex;
-  justify-content: flex-start;
   align-items:center;
 
 }
@@ -62,8 +75,9 @@ a:hover{
 .border{
   border:solid 1px white;
   width:90%;
+
 }
-.icon,.user{
+.icon_container_genearal,.user{
   margin-left:10px;
   line-height:40px;
 }
@@ -72,7 +86,7 @@ a:hover{
   color:white;
   font-size:12px;
 }
-/*setting header*/
+/*setting sezione contenuti*/
 
 .menu_a_tendina{
   display: none;
@@ -103,18 +117,13 @@ a:hover{
 .avanzamento input{
   width:400px;
 }
-.conten{
+.contenuti_principali{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-wrap:wrap;
 }
-.music_copertina{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.music_copertina img{
-  max-width:200px;
+.contenuti_principali img{
+  max-width:150px;
   max-height:150px;
   margin-left:30px;
   margin-top:15px;
@@ -124,7 +133,7 @@ a:hover{
   border-radius:50%;
 }
 
-/*setting footer*/
+/*setting player*/
 .menu_in_play{
   display: flex;
   justify-content: space-between;
@@ -181,26 +190,33 @@ a:hover{
 .dx img{
   margin-right:5px;
 }
+/*mobile version*/
 @media all and (max-width:863px){
   .menu h2,h4,p{
     display: none;
   }
   .menu{
     align-items: center;
-    width:50px;
+    width:70px;
   }
-  .contents{
-    width:calc(100% - 50px);
+  .album_e_artisti{
+    width:calc(100% - 70px);
   }
-  .icon img{
-    margin:20px 0;
+  .icon_container_genearal img{
+    width:30px;
+    height:30px;
+    margin:15px 0;
+  }
+  .border{
+    width:90%;
+    margin:0 5%;
   }
   .user img{
-    margin:10px 0;
+    width:30px;
+    height:30px;
+    margin:15px 0;
   }
-  .titolo_categoria h2{
-    text-align: center;
-  }
+
   .items_header_menu{
     display: none;
   }
