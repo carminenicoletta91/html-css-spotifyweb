@@ -39,11 +39,11 @@
 }
 
 h1, h2, h3, h4{
-  font-family:serif;
+font-family: 'Raleway', sans-serif;
   color:white;
 }
 p,a{
-  font-family:Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 a{
   text-decoration:none;
@@ -119,7 +119,6 @@ a:hover{
 }
 .contenuti_principali{
   display: flex;
-  align-items: center;
   flex-wrap:wrap;
 }
 .contenuti_principali img{
